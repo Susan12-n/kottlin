@@ -103,55 +103,22 @@ fun main(){
         println("Invalid choice.")
     }
 
-    // while (true) {
-        println("Do you want to continue making transactions? (yes/no): ")
-        val userInput = readLine()
+ while (true) {
+    println("Do you want to continue making transactions? (yes/no): ")
+    val userInput = readLine()
 
-        when (userInput) {
-            "yes" -> {
-                // Code for continuing the transaction
-                println("You have chosen to continue the transaction.")
-                // Call your transaction function here
-            }
-            "no" -> {
-                println("Exiting the Mpesa system...")
-                // break // Exit the loop and terminate the program
-            }
-            else -> {
-                println("Invalid input. Please enter 'yes' or 'no'.")
-            }
-        }
-
-         val choice = readLine()?.toIntOrNull()
-
-    if (choice != null) {
-        if (choice == 1) {
-            println("You have selected: Send Money")
-            // Add code for sending money here
-        } else if (choice == 2) {
-            println("You have selected: Withdraw Cash")
-            // Add code for withdrawing cash here
-        } else if (choice == 3) {
-            println("You have selected: Buy Airtime")
-            // Add code for buying airtime here
-        } else if (choice == 4) {
-            println("You have selected: Loans and Savings")
-            // Add code for loans and savings here 
-        } else if (choice == 5) {
-            println("You have selected: Lipa na MPESA")
-            // Add code for lipa na MPESA here  
-        } else if (choice == 6) {
-            println("You have selected: My Account")
-            // Add code for my account here 12341234
-
-        } else {
-            println("Invalid option, please choose between 1 and 3.")
-        }
+    if (userInput == "yes") {
+        // Code for continuing the transaction
+        println("You have chosen to continue the transaction.")
+        // Call your transaction function here
+    } else if (userInput == "no") {
+        println("Exiting the Mpesa system...")
+        return // Exit the loop and terminate the program
     } else {
-        println("Invalid input, please enter a number.")
+        println("Invalid input. Please enter 'yes' or 'no'.")
     }
+}
 
-    
 
 
      if (choice == 2) {         
